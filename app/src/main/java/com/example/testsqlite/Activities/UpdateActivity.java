@@ -46,6 +46,7 @@ public class UpdateActivity extends AppCompatActivity {
                 nombre.setText(usuario.getNombre());
                 edad.setText(String.valueOf(usuario.getEdad()));
                 correo.setText(usuario.getCorreo());
+                data.close();
             }
         });
 
@@ -71,6 +72,7 @@ public class UpdateActivity extends AppCompatActivity {
                         UpdateActivity.this,
                         "Se actualizaron los datos",
                         Toast.LENGTH_SHORT).show();
+                data.close();
             }
         });
 
